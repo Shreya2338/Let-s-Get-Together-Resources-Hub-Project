@@ -1,9 +1,9 @@
 # Let-s-Get-Together-Resources-Hub-Project
-**Right now: ** 
+Right now: 
 - One huge Google Doc
 - Tons of links
 - Hard to search
 - No structure
 - New members are overwhelmed
   
-**My goal: ** Create a centralized, searchable, organized knowledge hub for internal resources.
+My goal: Created a centralized, searchable, organized knowledge hub for internal resources.
