@@ -6,4 +6,4 @@ Right now:
 - No structure
 - New members are overwhelmed
   
-My goal: Created a centralized, searchable, organized knowledge hub for internal resources.
+My goal: Created a centralized, searchable, organized knowledge hub for internal resources!
