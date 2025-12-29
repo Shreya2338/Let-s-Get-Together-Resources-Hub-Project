@@ -5,4 +5,5 @@
 - Hard to search
 - No structure
 - New members are overwhelmed
+  
 **My goal: ** Create a centralized, searchable, organized knowledge hub for internal resources.
