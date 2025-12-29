@@ -1,4 +1,19 @@
-// Collapsible sections
+// ===== PASSWORD PROTECTION =====
+const correctPassword = "lgt2025"; // 🔴 CHANGE THIS
+
+function checkPassword() {
+  const input = document.getElementById("password-input").value;
+  const error = document.getElementById("error-message");
+
+  if (input === correctPassword) {
+    document.getElementById("password-screen").style.display = "none";
+    document.getElementById("site-content").style.display = "block";
+  } else {
+    error.textContent = "Incorrect password. Try again.";
+  }
+}
+
+// ===== COLLAPSIBLE SECTIONS =====
 document.querySelectorAll('.collapsible').forEach(header => {
   header.addEventListener('click', () => {
     const list = header.nextElementSibling;
@@ -6,7 +21,7 @@ document.querySelectorAll('.collapsible').forEach(header => {
   });
 });
 
-// Search
+// ===== SEARCH FUNCTION =====
 document.getElementById('searchInput').addEventListener('input', (e) => {
   const query = e.target.value.toLowerCase();
   document.querySelectorAll('.resource-list li').forEach(li => {
@@ -14,18 +29,24 @@ document.getElementById('searchInput').addEventListener('input', (e) => {
   });
 });
 
-// Tag filtering
+// ===== TAG FILTERING =====
 document.querySelectorAll('.tag').forEach(tagBtn => {
   tagBtn.addEventListener('click', () => {
-    const tag = tagBtn.dataset.tag;
+    const tag = tagBtn.dataset.tag.toLowerCase();
+
+    if (tag === 'all') {
+      document.querySelectorAll('.resource-list li').forEach(li => li.style.display = 'list-item');
+      return;
+    }
+
     document.querySelectorAll('.resource-list li').forEach(li => {
-      const tags = li.dataset.tags.toLowerCase();
-      li.style.display = tags.includes(tag.toLowerCase()) ? 'list-item' : 'none';
+      const tags = li.dataset.tags ? li.dataset.tags.toLowerCase() : '';
+      li.style.display = tags.includes(tag) ? 'list-item' : 'none';
     });
   });
 });
 
-// Copy-to-clipboard
+// ===== COPY-TO-CLIPBOARD =====
 document.querySelectorAll('.copy-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const link = btn.dataset.clipboard;
@@ -35,12 +56,12 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
   });
 });
 
-// Dark mode toggle
+// ===== DARK MODE TOGGLE =====
 document.getElementById('darkModeToggle').addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 });
 
-// Dark mode styles via JS
+// ===== OPTIONAL DARK MODE STYLES VIA JS =====
 const style = document.createElement('style');
 style.innerHTML = `
   .dark-mode {
@@ -48,5 +69,9 @@ style.innerHTML = `
     color: #eee !important;
   }
   .dark-mode a { color: #80c0ff; }
+  .dark-mode ul.resource-list {
+    background-color: #2a2a2a !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5) !important;
+  }
 `;
 document.head.appendChild(style);
