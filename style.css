@@ -240,3 +240,184 @@ body.dark-mode .card, body.dark-mode ul.resource-list {
     width: 80%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+   ✨ GLOBAL SMOOTHNESS & POLISH
+================================ */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  animation: pageFade 0.8s ease-in-out;
+}
+
+@keyframes pageFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ===============================
+   💎 HERO – PREMIUM DEPTH
+================================ */
+
+.hero {
+  background-size: 200% 200%;
+  animation: heroFloat 1s ease-out, gradientShift 10s ease infinite;
+}
+
+@keyframes heroFloat {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===============================
+   🪪 LINKTREE-STYLE LIST ITEMS
+================================ */
+
+ul.resource-list li {
+  position: relative;
+  border-radius: 14px;
+  padding: 14px 16px;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background-color 0.18s ease;
+}
+
+ul.resource-list li:hover {
+  background-color: rgba(0,0,0,0.035);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.12);
+}
+
+ul.resource-list li:active {
+  transform: scale(0.98);
+}
+
+/* ===============================
+   💠 CARD = GLASSY PREMIUM
+================================ */
+
+ul.resource-list {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.45);
+}
+
+/* ===============================
+   🔽 COLLAPSIBLE FEELS SMOOTHER
+================================ */
+
+.collapsible {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.collapsible:active {
+  transform: scale(0.98);
+}
+
+/* ===============================
+   ✨ BUTTON MICRO-INTERACTIONS
+================================ */
+
+button,
+.tag,
+.copy-btn,
+#darkModeToggle {
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    filter 0.15s ease;
+}
+
+button:hover,
+.tag:hover,
+.copy-btn:hover,
+#darkModeToggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+  filter: brightness(1.05);
+}
+
+button:active,
+.tag:active,
+.copy-btn:active {
+  transform: scale(0.97);
+}
+
+/* ===============================
+   🔒 PASSWORD SCREEN = REAL CARD
+================================ */
+
+#password-screen {
+  background: rgba(255,255,255,0.78);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 42px 36px;
+  border-radius: 22px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.18);
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: passwordPop 0.8s ease;
+}
+
+@keyframes passwordPop {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ===============================
+   🌙 DARK MODE PREMIUM FIXES
+================================ */
+
+body.dark-mode ul.resource-list {
+  border-color: rgba(255,255,255,0.08);
+}
+
+body.dark-mode ul.resource-list li:hover {
+  background-color: rgba(255,255,255,0.06);
+}
+
+body.dark-mode #password-screen {
+  background: rgba(40,40,40,0.85);
+}
+/* Dark mode: make section headings white */
+body.dark-mode h2 {
+  color: #ffffff;
+}
