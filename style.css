@@ -207,5 +207,38 @@ body.dark-mode .card, body.dark-mode ul.resource-list {
   .search-container input {
     width: 80%;
   }
+}/* ===== PASSWORD SCREEN (BIG & CLEAR) ===== */
+#password-screen {
+  margin-top: 20vh;
 }
+
+#password-screen h1 {
+  font-size: 3.5rem;   /* VERY BIG title */
+  margin-bottom: 15px;
+}
+
+#password-screen p {
+  font-size: 1.6rem;   /* Bigger subtitle */
+  margin-bottom: 25px;
+}
+
+#password-screen input {
+  font-size: 1.3rem;
+  padding: 16px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+#password-screen button {
+  font-size: 1.3rem;
+  padding: 16px 26px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+#error-message {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
 
