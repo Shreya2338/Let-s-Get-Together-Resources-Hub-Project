@@ -244,3 +244,32 @@ body.dark-mode .card, body.dark-mode ul.resource-list {
 }
 
 
+  /* FORCE PASSWORD SCREEN SIZE */
+#password-screen {
+  font-size: 28px !important;
+}
+
+#password-screen h1 {
+  font-size: 72px !important;
+}
+
+#password-screen p {
+  font-size: 36px !important;
+}
+
+#password-screen input {
+  font-size: 32px !important;
+  padding: 24px !important;
+  width: 380px !important;
+}
+
+#password-screen button {
+  font-size: 32px !important;
+  padding: 24px 40px !important;
+}
+
+#error-message {
+  font-size: 26px !important;
+}
+
+
