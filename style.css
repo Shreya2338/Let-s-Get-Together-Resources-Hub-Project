@@ -1,15 +1,14 @@
 :root {
-  --primary: #000000;
-  --secondary: #c7576d;
-  --background: #f3e7d3;
+  --primary: #000000;     /* soft indigo */
+  --secondary: #c7576d;   /* blush pink */
+  --background: #f9fafc;  /* clean light */
   --card: #ffffff;
   --text: #2e2e2e;
 }
 
-/* ===== GLOBAL ===== */
 body {
   font-family: "Poppins", Arial, sans-serif;
-  background-color: #f3e7d3;
+  background-color: #5ba3b081; /* darker walnut brown */
 
   /* subtle paper texture */
   background-image:
@@ -19,106 +18,41 @@ body {
   background-position: 0 0, 10px 10px;
 
   margin: 0;
-  padding: 0;
+  padding: 40px 20px;
   color: var(--text);
   text-align: center;
 }
 
-/* ===================================================== */
-/* 🔒 PASSWORD SCREEN — PREMIUM CARD */
-/* ===================================================== */
-
+/* ===== PASSWORD SCREEN ===== */
 #password-screen {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 20vh;
 }
 
-#password-screen::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, #00000015, #c7576d15);
-  z-index: -1;
+#password-screen input {
+  padding: 10px;
+  width: 220px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
 }
 
-#password-screen > div,
-#password-screen {
-  position: relative;
-}
-
-#password-screen {
-  padding: 20px;
-}
-
-#password-screen h1 {
-  font-size: 4.5rem;
-  margin-bottom: 20px;
-}
-
-#password-screen p {
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-/* CARD */
-#password-screen {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  border-radius: 28px;
-  padding: 60px 70px;
-  max-width: 520px;
-  box-shadow:
-    0 30px 60px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.6);
-}
-
-/* INPUT */
-#password-input {
-  font-size: 2rem;
-  padding: 22px;
-  width: 100%;
-  border-radius: 14px;
-  border: 2px solid #ddd;
-  margin-bottom: 25px;
-  outline: none;
-}
-
-#password-input:focus {
-  border-color: var(--secondary);
-}
-
-/* BUTTON */
 #password-screen button {
-  font-size: 2rem;
-  padding: 22px 40px;
-  border-radius: 14px;
+  margin-left: 10px;
+  padding: 10px 16px;
+  border-radius: 6px;
   border: none;
-  background: linear-gradient(135deg, var(--secondary), #e07a8d);
+  background-color: #6b4f3f;
   color: white;
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
 }
 
 #password-screen button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+  background-color: #5a4032;
 }
 
 #error-message {
-  font-size: 1.5rem;
-  margin-top: 20px;
-  color: #c0392b;
-}
-
-/* ===================================================== */
-/* 🌟 MAIN SITE */
-/* ===================================================== */
-
-#site-content {
-  padding: 40px 20px;
+  color: red;
+  margin-top: 10px;
 }
 
 /* ===== HERO ===== */
@@ -139,12 +73,15 @@ body {
 }
 
 .hero h1 {
-  font-size: 2.4rem;
+  margin: 10px 0 5px;
+  font-size: 2.2rem; /* slightly smaller */
+  letter-spacing: 0.5px;
 }
 
 .hero .subtitle {
   font-size: 1.2rem;
   font-weight: 600;
+  opacity: 0.9;
 }
 
 .hero .tagline {
@@ -161,33 +98,44 @@ body {
   top: 20px;
   right: 20px;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
   border: none;
+  border-radius: 8px;
   background-color: var(--secondary);
   color: white;
   cursor: pointer;
   font-weight: bold;
 }
 
-/* ===== SEARCH ===== */
+/* ===== SEARCH BAR ===== */
+.search-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
 .search-container input {
-  padding: 0.7rem 1rem;
+  padding: 0.6rem 1rem;
   width: 50%;
-  max-width: 420px;
+  max-width: 400px;
   border-radius: 10px;
   border: 1px solid #aaa;
   font-size: 1rem;
 }
 
 /* ===== TAGS ===== */
+.tags-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .tag {
   padding: 0.4rem 1rem;
   margin: 0.3rem;
-  border-radius: 10px;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
   background-color: #ccc;
   font-weight: 600;
+  transition: 0.2s;
 }
 
 .tag:hover {
@@ -195,22 +143,45 @@ body {
   color: white;
 }
 
-/* ===== RESOURCE CARDS ===== */
+/* ===== SECTION HEADERS ===== */
+h2 {
+  color: var(--primary);
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+/* ===== COLLAPSIBLE SECTIONS ===== */
+.collapsible {
+  cursor: pointer;
+  background-color: #bfa27f;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.collapsible:hover {
+  background-color: #a88760;
+}
+
+/* ===== CARDS / LISTS ===== */
 ul.resource-list {
   background-color: var(--card);
-  padding: 30px 40px;
+  padding: 25px 35px;
   border-radius: 18px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   max-width: 800px;
   margin: 0 auto 30px auto;
-  list-style: none;
   text-align: left;
+  list-style: none;
 }
 
 li {
   margin-bottom: 12px;
+  line-height: 1.6;
 }
 
+/* ===== LINKS ===== */
 a {
   color: var(--primary);
   font-weight: 600;
@@ -222,33 +193,47 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ===== DARK MODE ===== */
+/* ===== COPY BUTTON ===== */
+.copy-btn {
+  margin-left: 10px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  background-color: #eee;
+  transition: 0.2s;
+}
+
+.copy-btn:hover {
+  background-color: var(--secondary);
+  color: white;
+  border-color: var(--secondary);
+}
+
+/* ===== DARK MODE STYLING ===== */
 body.dark-mode {
   background-color: #1c1c1c;
   color: #eee;
 }
 
-body.dark-mode ul.resource-list {
+body.dark-mode a {
+  color: #80c0ff;
+}
+
+body.dark-mode .card, body.dark-mode ul.resource-list {
   background-color: #2a2a2a;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 /* ===== MOBILE ===== */
 @media (max-width: 600px) {
-  #password-screen {
-    padding: 40px 30px;
+  .hero h1 {
+    font-size: 2rem;
   }
 
-  #password-screen h1 {
-    font-size: 3rem;
-  }
-
-  #password-screen p {
-    font-size: 1.5rem;
-  }
-
-  #password-input,
-  #password-screen button {
-    font-size: 1.4rem;
+  ul.resource-list {
+    padding: 20px;
   }
 
   .search-container input {
