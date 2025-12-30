@@ -207,38 +207,40 @@ body.dark-mode .card, body.dark-mode ul.resource-list {
   .search-container input {
     width: 80%;
   }
-}/* ===== PASSWORD SCREEN (BIG & CLEAR) ===== */
+
+
+  /* ===== PASSWORD SCREEN (EXTRA EXTRA BIG) ===== */
 #password-screen {
-  margin-top: 20vh;
+  margin-top: 18vh;
 }
 
 #password-screen h1 {
-  font-size: 3.5rem;   /* VERY BIG title */
-  margin-bottom: 15px;
-}
-
-#password-screen p {
-  font-size: 1.6rem;   /* Bigger subtitle */
+  font-size: 4.8rem;   /* MASSIVE title */
   margin-bottom: 25px;
 }
 
+#password-screen p {
+  font-size: 2.1rem;   /* BIG subtitle */
+  margin-bottom: 35px;
+}
+
 #password-screen input {
-  font-size: 1.3rem;
-  padding: 16px;
-  width: 300px;
-  border-radius: 10px;
+  font-size: 1.7rem;
+  padding: 22px;
+  width: 360px;
+  border-radius: 14px;
 }
 
 #password-screen button {
-  font-size: 1.3rem;
-  padding: 16px 26px;
-  border-radius: 10px;
-  margin-left: 10px;
+  font-size: 1.7rem;
+  padding: 22px 34px;
+  border-radius: 14px;
+  margin-left: 14px;
 }
 
 #error-message {
-  font-size: 1.2rem;
-  margin-top: 15px;
+  font-size: 1.5rem;
+  margin-top: 20px;
 }
 
 
