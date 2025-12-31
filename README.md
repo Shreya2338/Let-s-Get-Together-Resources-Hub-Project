@@ -6,7 +6,7 @@
 
 ## 🌟 Project Overview
 
-When I first joined the Let’s Get Together community, resources were scattered across a **large, unorganized document**, making it hard to find anything quickly.  
+When I first joined the Let’s Get Together community, resources were scattered across a **large, unorganized google document**, making it hard to find anything quickly.  
 
 As the **Front-End Developer & UI Engineer**, I built this **interactive Resources Hub** to:  
 - Organize all links and documents efficiently  
