@@ -8,7 +8,7 @@
 
 When I first joined the Let’s Get Together community, resources were scattered across a **large, unorganized google document**, making it hard to find anything quickly.  
 
-As the **Front-End Developer & UI Engineer**, I built this **interactive Resources Hub** to:  
+As the **Front-End Developer**, I built this **interactive Resources Hub** to:  
 - Organize all links and documents efficiently  
 - Create a visually engaging, modern interface  
 - Improve usability for all members  
@@ -61,7 +61,7 @@ As the **Front-End Developer & UI Engineer**, I built this **interactive Resourc
 
 ## 🎯 Role
 
-**Front-End Developer & UI Engineer**  
+**Front-End Developer**  
 - Built the full frontend interface  
 - Enhanced UX with **animations, smooth interactions, and responsive design**  
 - Optimized resource organization for **easy navigation**  
