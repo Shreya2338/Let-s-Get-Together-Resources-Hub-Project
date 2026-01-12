@@ -34,7 +34,7 @@ As the **Front-End Developer**, I built this **interactive Resources Hub** to:
 - **Dark Mode Toggle:** Comfortable reading anytime  
 - **Search & Tags:** Quickly filter resources  
 - **Collapsible Sections:** Organized & expandable  
-- **Premium Animations:** Smooth fade-ins, floating hero, subtle micro-interactions  
+- **Premium Animations:** Smooth fade-ins, floating hero, subtle micro-interactions 
 
 ---
 
