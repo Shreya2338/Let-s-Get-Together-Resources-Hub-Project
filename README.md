@@ -2,7 +2,7 @@
 
 **Live Demo:** [https://shreya2338.github.io/Let-s-Get-Together-Resources-Hub-Project/](https://shreya2338.github.io/Let-s-Get-Together-Resources-Hub-Project/)
 
----
+
 
 ## 🌟 Project Overview
 
@@ -13,7 +13,7 @@ As the **Front-End Developer**, I built this **interactive Resources Hub** to:
 - Create a visually engaging, modern interface  
 - Improve usability for all members  
 
----
+
 
 ## 🛠 Tech Stack
 
@@ -36,7 +36,7 @@ As the **Front-End Developer**, I built this **interactive Resources Hub** to:
 - **Collapsible Sections:** Organized & expandable  
 - **Premium Animations:** Smooth fade-ins, floating hero, subtle micro-interactions 
 
----
+
 
 ## 📸 Screenshots  
 
