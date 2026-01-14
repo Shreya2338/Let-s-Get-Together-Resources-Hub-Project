@@ -25,7 +25,7 @@ As the **Front-End Developer**, I built this **interactive Resources Hub** to:
 - CSS3 – Animations, gradients, dark mode, premium UI  
 - JavaScript – Search, collapsibles, dark mode toggle  
 
----
+
 
 ## ✨ Features
 
