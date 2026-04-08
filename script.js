@@ -1,5 +1,5 @@
 // ===== PASSWORD PROTECTION =====
-const correctPassword = "lgt2025"; // 🔴 CHANGE THIS
+const correctPassword = "lgt2025"; // 🔴 ha tricked ya
 
 function checkPassword() {
   const input = document.getElementById("password-input").value;
